@@ -1,0 +1,731 @@
+html, body {
+  background: #fff;
+}
+
+.ovfHiden {
+  overflow: hidden;
+  height: 100%;
+}
+
+img {
+  display: block;
+}
+.header{
+  color: #fff;
+  font-size: 0.31rem;
+  text-align: center;
+  padding-top: 28px;
+  position: fixed;
+  top: 0;
+  left:0 ;
+  height: 1.2rem;
+  width: 100%;
+  background: url("../images/bg.png") no-repeat top center;
+  background-size: 100% auto;
+  z-index: 100;
+  overflow: hidden;
+  padding-right: 0.68rem;
+  /*padding-right: 0.2rem;*/
+}
+.header .back{
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-left: 0.2rem;
+  margin-top: -1px;
+  float: left;
+  background: url("../images/back.png") no-repeat center;
+  background-size: 40% auto;
+  cursor: pointer;
+}
+.header .share{
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: url("../images/shareBg.png") no-repeat center;
+  background-size: 0.32rem auto;
+  float: right;
+  margin-top: -4px;
+  cursor: pointer;
+  z-index: 999;
+}
+.backBtn{
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: fixed;
+  top: 0.3rem;
+  left: 0.085rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+.visa {
+  margin-top: 1.2rem;
+  width: 100%;
+  padding: 0.2rem 0.2rem 1.43rem;
+  overflow: hidden;
+  transition: height 1s ease 0s;
+  -wekit-transition: height 1s ease 0s;
+}
+
+.banner {
+  width: 100%;
+  height: 3.1rem;
+  border-radius: 0.2rem;
+  background: #fff;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+}
+
+.visaInfo {
+  margin: 0.2rem -0.2rem 0;
+  overflow: hidden;
+}
+
+.visaInfo ul li {
+  width: 33.333333%;
+  padding: 0.24rem 0.15rem;
+  font-size: 0.25rem;
+  float: left;
+  border-bottom: 1px solid #EAEAEA;
+  border-right: 1px solid #EAEAEA;
+  overflow: hidden;
+  text-align: center;
+}
+
+.visaInfo ul li:nth-child(1) {
+  width: 100%;
+  padding: 0 0.2rem 0.1rem 0;
+}
+.visaInfo ul li:nth-child(1),.visaInfo,.visaLists{
+  border-bottom: 0.16rem solid #F1F0F6;
+}
+
+.visaInfo ul li:nth-child(1),
+.visaInfo ul li:nth-child(4),
+.visaInfo ul li:nth-child(7) {
+  border-right: none;
+}
+.visaInfo ul li:nth-child(5),
+.visaInfo ul li:nth-child(6),
+.visaInfo ul li:nth-child(7) {
+  border-bottom: none;
+}
+.visaInfo ul li:nth-child(1) > * {
+  float: left;
+}
+
+.visaInfo ul li h2 {
+  font-size: 0.28rem;
+  font-weight: normal;
+  color: #4A4A4A;
+}
+
+.visaInfo ul li:nth-child(1) div {
+  padding-left: 0.25rem;
+}
+
+.visaInfo ul li:nth-child(1) h2 {
+  min-width: 53%;
+  line-height: 0.6rem;
+  text-align: left;
+  padding-left: 0.25rem;
+  font-size: 0.3rem;
+}
+
+.visaInfo ul li:nth-child(1) h3 {
+  font-size: 0.3rem;
+  font-weight: normal;
+  color: #F5A623;
+  letter-spacing: 0px;
+}
+
+.visaInfo ul li span {
+  display: block;
+  font-size: 0.22rem;
+  font-weight: normal;
+  color: #838383;
+  letter-spacing: 0px;
+}
+
+.visaInfo ul li:nth-child(1) span {
+  text-decoration: line-through;
+  text-align: left;
+  margin-left: 0.1rem;
+  letter-spacing: 1px;
+}
+
+/*列表*/
+.visaLists {
+  margin: 0 -0.2rem;
+}
+.visaLists nav{
+  width: 100%;
+  height: 0.85rem;
+  font-size: 0.28rem;
+  color: #5A5A5A;
+  padding: 0 0.2rem;
+  z-index: 100;
+  background: #fff;
+}
+.visaLists nav li{
+  float: left;
+  line-height: 0.85rem;
+  text-align: center;
+  width: 25%;
+  cursor: pointer;
+}
+.visaLists nav li.navActive{
+  color:#2EC9CF ;
+  font-weight: bold;
+  border-bottom: 2px solid #2EC9CF;
+}
+.visaLists > div,.visaNav {
+  border-bottom: 1px solid #E5E5E5;
+}
+.visaLists > div:last-child {
+  border-bottom: none;
+}
+.visaLists > div > .listTitle {
+  width: 100%;
+  padding: 0.18rem 0.3rem;
+}
+.visaLists .visaFee .listTitle,.visaLists .orderList .listTitle{
+  padding: 0.18rem 0.3rem 0.1rem;
+}
+.visaLists > div > div:nth-child(2) p,.words p{
+  color: #5C5C5C;
+}
+
+.listTitle {
+  position: relative;
+}
+
+.visaLists .listTitle > h1 {
+  font-size: 0.28rem;
+  color: #4A4A4A;
+}
+
+/*材料清单*/
+.visaLists > div > div:nth-child(2){
+  padding: 0 0 0.25rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.materialList {
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.visaLists p {
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+}
+
+.imgs div {
+  float: left;
+  margin: 0 0.255rem;
+  cursor: pointer;
+}
+.imgs div:first-child{
+  margin-left: 0;
+}
+.imgs div:last-child{
+  margin-right: 0;
+}
+.imgs .imgPink p {
+  color: #2EC9CF;
+}
+
+.imgs > div > em {
+  display: block;
+  margin: 0 auto;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+.indentity_bj {
+  width: 0.5rem;
+  height: 0.4rem;
+  background: url("../images/materia1.png") no-repeat;
+}
+
+.indentity_empty {
+  width: 0.46rem;
+  height: 0.38rem;
+  background: url("../images/materia2.png") no-repeat;
+}
+
+.indentity_student {
+  width: 0.32rem;
+  height: 0.37rem;
+  background: url("../images/materia3.png") no-repeat;
+}
+.indentity_retire {
+  width: 0.43rem;
+  height: 0.38rem;
+  background: url("../images/materia5.png") no-repeat;
+}
+
+.indentity_work {
+  width: 0.41rem;
+  height: 0.41rem;
+  background: url("../images/materia4.png") no-repeat;
+}
+
+.indentity_child {
+  width: 0.37rem;
+  height: 0.41rem;
+  background: url("../images/materia7.png") no-repeat center;
+}
+
+.indentity_free {
+  width: 0.39rem;
+  height: 0.41rem;
+  background: url("../images/materia6.png") no-repeat center;
+}
+
+.imgs {
+  /*margin-top: 0.4rem;*/
+  width: 200%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0.38rem;
+}
+
+.imgs p {
+  font-size: 0.25rem;
+  line-height: 0.6rem;
+  color: #A2AEB6 ;
+}
+
+.words {
+  padding: 1.4rem 0.1rem 0.3rem 0;
+}
+
+/*办理流程*/
+.flowList > div {
+  font-size: 0.25rem;
+  border-left: 1px solid #EAEAEA;
+  padding-bottom: 0.27rem;
+  position: relative;
+}
+
+.flowList > div:last-child {
+  /*border: none;*/
+  padding-bottom: 0;
+}
+
+.flowList > div .flowTitle span {
+  display: block;
+  width: 0.26rem;
+  height: 0.26rem;
+  background: #2EC9CF;
+  border-radius: 0.12rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.26rem;
+  font-size: 0.2rem;
+  margin: 0.06rem 0.2rem 0 0;
+}
+
+.flowList > div .flowTitle {
+  clear: both;
+  position: absolute;
+  top: -0.07rem;
+  left: -0.12rem;
+}
+
+.flowList > div .flowTitle > * {
+  float: left;
+}
+
+.flowList > div .flowTitle h1 {
+  font-size: 0.27rem;
+  color: #2EC9CF;
+  font-weight: normal;
+}
+
+.flowList > div p {
+  font-size: 0.24rem;
+  padding: 0.3rem 0.3rem 0;
+  color: #27262A;
+  line-height: 0.4rem;
+}
+
+footer {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.28rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  padding: 0.28rem;
+  font-weight: bold;
+}
+
+footer > div {
+  width: 48%;
+  height: 0.85rem;
+  float: left;
+  cursor: pointer;
+  line-height: 0.85rem;
+  border-radius: 8px;
+}
+footer > div:nth-child(1){
+  color: #2EC9CF;
+  border: 1px solid #2EC9CF;
+  margin-right: 4%;
+}
+footer > div:nth-child(2) ,.buyFrame{
+  color: #fff;
+  background-image: linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+  background-image: -webkit-linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+  box-shadow: 0 7px 17px 0 rgba(80,227,194,0.33), 0 7px 17px 0 rgba(0,0,0,0.09);
+  border-radius: 8px;
+}
+
+/*遮罩层*/
+.visaMask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 10;
+}
+
+.visaFrameWrap {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 8.4rem;
+  animation: fadeInUp 0.6s ease 0s;
+  display: none;
+  z-index: 19;
+}
+.visaHidden{
+  width: 100%;
+  height: 6.9rem;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+.visaFrame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: auto;
+  padding: 0 0 1.43rem;
+  z-index: 20;
+  font-size: 0.27rem;
+  transform: translateY(0px);
+}
+
+.visaFrame > div {
+  width: 100%;
+  border-top: 1px solid #EAEAEA;
+}
+
+.frameTitle {
+  width: 100%;
+  height: 1.43rem;
+ position: relative;
+  /* top: 0;
+  left: 0;*/
+  z-index: 200;
+  background: #fff;
+}
+
+.frameTitle h1 {
+  font-weight: normal;
+  font-size: 0.265rem;
+  padding: 0.4rem 0.75rem 0 2.5rem;
+  margin-top: 0.26rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.imgSign {
+  width: 1.93rem;
+  height: 1.93rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0.2rem;
+  top: -0.9rem;
+  z-index: 21;
+  /*padding: 0.03rem;*/
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.imgSign img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+  margin: auto;
+}
+
+.frameTitle span {
+  display: block;
+  width: 0.35rem;
+  position: absolute;
+  height: 0.35rem;
+  background: url("../images/visa_close.png") no-repeat center;
+  background-size: 100% 100%;
+  right: 0.18rem;
+  top: 0.2rem;
+}
+
+.visaType {
+  padding: 0.2rem 0 0.34rem;
+}
+
+.visaType p {
+  padding: 0.05rem 0.25rem;
+}
+
+.visaType > div {
+  overflow: hidden;
+  padding: 0 0.18rem;
+}
+
+.visaType > div span {
+  display: inline-block;
+  padding: 0.05rem 0.28rem;
+  background: #F5F5F5;
+  margin: 0.05rem 0.09rem 0.1rem;
+  border-radius: 8px;
+  font-size: 0.25rem;
+  cursor: pointer;
+}
+
+.visaType > div .tyBg {
+  background: #2EC9CF;
+  color: #fff;
+}
+
+.goDate, .persons {
+  padding: 0.25rem;
+  clear: both;
+}
+
+.goDate {
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.goDate > input {
+  text-align: right;
+  outline: none;
+  font-size: 0.27rem;
+  border: none;
+  color: #2EC9CF;
+  float: right;
+  background: url("../images/visa_jiantou.jpg") no-repeat center right;
+  background-size: auto 100%;
+  padding-right: 0.4rem;
+}
+
+.persons > p {
+  padding: 0.1rem 0;
+}
+
+.persons > div {
+  overflow: hidden;
+  clear: both;
+  padding: 0.16rem 0;
+}
+
+.persons > div > div:nth-child(1) {
+  float: left;
+  line-height: 0.58rem;
+}
+
+.persons > div > div:nth-child(2) {
+  float: right;
+}
+
+.persons > div > div {
+  letter-spacing: 0;
+}
+
+.numBtn > span {
+  display: inline-block;
+  width: 0.58rem;
+  height: 0.58rem;
+  background: #F5F5F5;
+  text-align: center;
+  line-height: 0.58rem;
+  font-size: 0.34rem;
+  cursor: pointer;
+  font-weight: normal;
+  color: #4A4A4A;
+}
+
+.numBtn > span:nth-child(2) {
+  width: 1.235rem;
+  font-size: 0.28rem;
+}
+
+.total {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  clear: both;
+  overflow: hidden;
+  padding: 0.2rem 0.25rem;
+  border-bottom: none !important;
+  z-index: 200;
+  font-size: 0.29rem;
+  background: #fff;
+  border-top: 1px solid #EAEAEA;
+}
+
+.total > div:first-child {
+  float: left;
+  margin-top: 0.14rem;
+}
+
+#rmb {
+  display: inline-block;
+  font-size: 0.4rem;
+  color:  #F5A623;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+.buyFrame {
+  width: 2.9rem;
+  height: 0.9rem;
+  text-align: center;
+  line-height: 0.85rem;
+  font-size: 0.29rem;
+  float: right;
+  cursor: pointer;
+}
+
+/*提示框*/
+.prompt {
+  font-size: 0.27rem;
+  position: absolute;
+  width: 4rem;
+  height: 1.8rem;
+  left: 50%;
+  margin-left: -2rem;
+  top: 50%;
+  margin-top: -0.9rem;
+  display: none;
+  border: 1px solid #2EC9CF;
+  z-index: 25;
+  background: #fff;
+  text-align: center;
+}
+
+.prompt p {
+  padding: 0.3rem;
+  color: #2EC9CF;
+}
+
+.prompt .yes {
+  width: 40%;
+  margin: 0 auto;
+  padding: 0.08rem;
+  color: #fff;
+  background-image: linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+  background-image: -webkit-linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+  border-radius: 0.2rem;
+  font-size: 0.24rem;
+}
+
+/*分享*/
+#shareDetail {
+  font-size: 0.3rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0rem;
+  left: 0;
+  z-index: 100;
+  line-height: 0.8rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .backBtn,.shareBtn{
+    top: 0.65rem!important;
+  }
+  .header{
+    padding-top: 50px!important;
+    height: 1.5rem!important;
+  }
+  .visa{
+    margin-top: 1.5rem!important;
+  }
+  footer{
+    padding: 0.28rem 0.28rem 0.8rem!important;
+  }
+  .total{
+    padding: 0.2rem 0.25rem 0.75rem!important;
+  }
+  #shareDetail{
+    bottom: 34px;
+  }
+}
+
+
+

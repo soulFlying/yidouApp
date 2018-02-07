@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新奇体验</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <meta name="apple-itunes-app" content="app-id=">
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+  <link rel="stylesheet" href="css/detail.css"/>
+  <style>
+    .advant div h2{
+      background: none;
+    }
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+      .banner .title{
+        top: 50px!important;
+      }
+      .backBtn,.shareBtn{
+        top: 0.85rem!important;
+      }
+      .back,.share{
+        top: 50px!important;
+      }
+      .bottom{
+        bottom: 34px;
+      }
+    }
+    </style>
+</head>
+<body>
+<a class="backBtn"></a>
+<!--<a class='shareBtn'></a>-->
+<span class="back"></span>
+<!--<span class='share'></span>-->
+<div class="banner newExperience">
+  <div class="swiper-container">
+    <div class="swiper-wrapper slidesWrap">
+      <div class="swiper-slide slides"><img src=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <h1 class="title"></h1>
+</div>
+<div class="advant">
+  <div class="titleNovelty">
+    <!--<h2></h2>-->
+    <p></p>
+  </div>
+  <div class="country">
+    <ul>
+      <li><em></em><span>目的地所属国：</span><a class="cityName"></a></li>
+      <li><em></em><span>适合游玩天数：</span><a class="day"></a></li>
+      <li><em></em><span>适合游玩月份：</span><a class="month"></a></li>
+    </ul>
+  </div>
+  <div class="playWay">
+    <h2>玩法推荐</h2>
+    <div class="content">
+    </div>
+  </div>
+  <div class="charge">
+    <h2>资费详情</h2>
+    <div class="content"></div>
+  </div>
+</div>
+<div class="bottom" id='shareDetail'><input type='text' value='下载逸豆APP' readonly></div>
+<!--<div class="robotBtn robotNovelty"></div>-->
+</body>
+<script>
+  function windowChange() {
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 640) {
+      document.documentElement.style.fontSize = 750 / 7.5 + 'px';
+    } else {
+      document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    }
+  }
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      windowChange();
+    }, false);
+    window.onresize = function () {
+      windowChange();
+    };
+  })();
+</script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/newExperienceJs.js"></script>
+<!--<script src=js/shareLoad.js></script>-->
+</html>

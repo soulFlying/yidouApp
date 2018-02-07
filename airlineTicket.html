@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>机票详情</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <meta name="apple-itunes-app" content="app-id=">
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/lightSpot.css"/>
+</head>
+<body>
+<a class="backBtn"></a>
+<div class="blueBg airlineBg"></div>
+<h1 class="mainTitle" id='hideHeader'><span class="back"></span>机票详情<!--<em class='share'></em>--></h1>
+<!--机票详情------------------>
+<div class="lightDetail airlineDetail" id='renderTop2'>
+  <div class="go">
+    <h1><span class="goSign"></span></h1>
+    <div class="timeAndLine">
+      <div class="times">
+        <div class="startTime">
+          <a></a>
+          <p></p>
+        </div>
+        <div class="endTime">
+          <a></a>
+          <p></p>
+        </div>
+      </div>
+      <div class="airLine">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul>
+          <li class="startStation"></li>
+          <li class="passStation"></li>
+          <li class="endStation"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <span class="lines">
+    <em></em>
+    <span><a></a></span>
+    <em></em>
+  </span>
+  <!--<div class="back">
+    <h1><span class="goSign">返</span>香港-大阪 总时长3h500m</h1>
+    <div class="timeAndLine">
+      <div class="times">
+        <div class="startTime">
+          <a>08:00</a>
+          <p>08-30 周三</p>
+        </div>
+        <div class="endTime">
+          <a>08:00</a>
+          <p>08-30 周三</p>
+        </div>
+      </div>
+      <div class="airLine">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul>
+          <li class="startStation endStation2">香港机场T1航站楼</li>
+          <li class="passStation">国泰航空CX687<br />经停广州</li>
+          <li class="endStation startStation2">香港机场T1航站楼</li>
+        </ul>
+      </div>
+    </div>
+  </div>-->
+</div>
+<!--规则--------------------->
+<div class="rules">
+    <h2>退改规则</h2>
+</div>
+<!--购买--------------------->
+<div class="total" id='hideFooter'>
+  <div>总额<span><a class="price"></a><a class="tax"></a></span></div>
+  <div class="buyFrame">立即购买</div>
+</div>
+<div class="bottom" id='shareDetail'><input type='text' value='下载逸豆APP' readonly></div>
+</body>
+<script>
+  function windowChange() {
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 750) {
+      document.documentElement.style.fontSize = 750 / 7.5 + 'px';
+    } else {
+      document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    }
+  }
+
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      windowChange();
+    }, false);
+
+    window.onresize = function () {
+      windowChange();
+    };
+
+  })();
+
+</script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src=js/config.js></script>
+<script src="js/airlineJs.js"></script>
+<!--<script type=text/javascript src='./js/shareLoad.js'></script>-->
+</html>

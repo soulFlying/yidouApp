@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>产品详情</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <meta name="apple-itunes-app" content="app-id=">
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel='stylesheet' href='css/detail_new.css'>
+</head>
+<body>
+<!--头部-->
+<div class='detail_top'>
+  <div class='header'><i class='back'></i>产品详情<i class='use_info'></i></div>
+  <ul class='nav'>
+    <li class='active'>产品介绍</li>
+    <li>规格参数</li>
+    <li>包装售后</li></ul>
+</div>
+<!--内容-->
+<div class='main product_info'>
+  <img class='main_pic' src="images/yidou_detail/detail_1.png">
+  <img class='main_pic' src="images/yidou_detail/detail_2.png">
+<div class='player_wrap'>
+  <img class='main_pic' src="images/yidou_detail/detail_3.png">
+  <div class='player'>
+    <p>逸豆，能给我的旅行带来什么？</p>
+    <button class='open_player'>观看视频</button>
+  </div>
+</div>
+  <img class='main_pic' src="images/yidou_detail/detail_4.png">
+  <img class='main_pic' src="images/yidou_detail/detail_5.png">
+  <img class='main_pic' src="images/yidou_detail/detail_6.png">
+  <img class='main_pic' src="images/yidou_detail/detail_7.png">
+</div>
+<div class='main norms'>
+  <img class='main_pic' src="images/yidou_detail/detail_8.png">
+</div>
+<div class='main afterSale'>
+  <img class='main_pic' src="images/yidou_detail/detail_9.png">
+</div>
+  <div class="buyNow">
+    <input type="button" value="立即购买">
+  </div>
+<!--视频-->
+<div class='mask'>
+  <div class='videos'>
+    <video controls="controls" id="media" width="100%" -webkit-playsinline webkit-playsinline playsinline poster="images/yidou_detail/detail_3.png">
+      <source src="http://img.yidou.easyto.com/YD_KYOTO.webm" type="video/webm">
+      <source src="http://img.yidou.easyto.com/YD_KYOTO.mp4" type="video/mp4">
+      <source src="http://img.yidou.easyto.com/YD_KYOTO_11.22.3gp" type="video/3gp">
+    </video>
+    <span class=playClose></span>
+  </div>
+</div>
+</body>
+<script>
+  function windowChange() {
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 640) {
+      document.documentElement.style.fontSize = 750 / 7.5 + 'px';
+    } else {
+      document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    }
+  }
+
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      windowChange();
+    }, false);
+
+    window.onresize = function () {
+      windowChange();
+    };
+
+  })();
+
+</script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/yidouDeyail.js"></script>
+</html>

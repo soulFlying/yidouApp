@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>特价签证</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="apple-itunes-app" content="app-id=">
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/visa.css" />
+</head>
+<body>
+<!-----------------banner------------------>
+<a class="backBtn"></a>
+<nav class="header" id='hideHeader'><span class="back"></span>特价签证<!--<em class='share'></em>--></nav>
+<div class="visa" id='renderTop'>
+    <div class="banner">
+        <img src="" />
+    </div>
+    <div class="visaInfo">
+        <ul>
+            <li>
+                <h2 id="infoTitle"></h2>
+              <div>
+                <h3 id="minPrice"></h3>
+                <span id="orgPrice"></span>
+              </div>
+            </li>
+            <li>
+                <h2>入境次数</h2>
+                <span></span>
+            </li>
+            <li>
+                <h2>停留天数</h2>
+                <span></span>
+            </li>
+            <li>
+                <h2>有效期限</h2>
+                <span></span>
+            </li>
+            <li>
+                <h2>销签与否</h2>
+                <span></span>
+            </li>
+            <li>
+                <h2>办理时长</h2>
+                <span></span>
+            </li>
+            <li>
+                <h2>面试与否</h2>
+                <span></span>
+            </li>
+        </ul>
+    </div>
+    <!---------------清单列表----------------------->
+    <div class="visaLists">
+        <nav class="visaNav">
+          <ul>
+            <li class="navActive">材料清单</li>
+            <li>办理流程</li>
+            <li>费用说明</li>
+            <li>预订须知</li>
+          </ul>
+        </nav>
+        <div class="visaMaterial">
+            <div class="materialList">
+                <div class="imgs">
+                  <div>
+                    <em class=""></em>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="words">
+                    <P></P>
+                </div>
+            </div>
+        </div>
+        <div class="visaFlow">
+            <div class="listTitle">
+                <h1>办理流程</h1>
+            </div>
+            <div class="flowList">
+                <div>
+                    <div class="flowTitle">
+                        <span></span>
+                        <h1></h1>
+                    </div>
+                    <p></p>
+                </div>
+              <!--<div>
+                <p></p>
+              </div>-->
+            </div>
+        </div>
+        <div class="visaFee">
+            <div class="listTitle">
+                <h1>费用说明</h1>
+            </div>
+            <div class="feeList">
+                <P></P>
+            </div>
+        </div>
+        <div class="visaOrder">
+            <div class="listTitle">
+                <h1>预订须知</h1>
+            </div>
+            <div class="orderList">
+                <P></P>
+            </div>
+        </div>
+    </div>
+    <!---------------footer----------------------->
+    <footer id='hideFooter'>
+        <div class="service">联系客服</div>
+        <div class="visaBuy">立即购买</div>
+    </footer>
+    <button id="shareDetail">下载逸豆APP购买特价签证</button>
+</div>
+<div class="visaMask" id="visaMask"></div>
+<!-------------------滑出弹框------------------------->
+<div class="visaFrameWrap">
+
+        <div class="frameTitle">
+            <div class="imgSign">
+                <img src="" />
+            </div>
+            <h1></h1>
+            <span id="frameClose"></span>
+        </div>
+  <div class="visaHidden">
+    <div class="visaFrame">
+      <div class="visaType">
+        <p>请选择产品种类</p>
+        <div id="types">
+          <span></span>
+        </div>
+      </div>
+      <div class="goDate">
+        出发时间
+        <input id="goDate" type="text" value="" placeholder="请选择出发时间" readonly="true"/>
+      </div>
+      <div class="persons">
+        <p>请选择您的出行人数</p>
+        <div class ="peopleType">
+          <div></div>
+          <div class="numBtn">
+            <span class="reduce">-</span>
+            <span class="quantity">1</span>
+            <span class="add">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="total">
+        <div>总额<span id="rmb">￥0</span></div>
+        <div class="buyFrame" id="butNow">立即购买</div>
+    </div>
+    <div class="prompt">
+        <p></p>
+        <div class="yes">确定</div>
+    </div>
+</div>
+</body>
+<script>
+  function windowChange() {
+    var deviceWidth = document.documentElement.clientWidth;
+    if(deviceWidth>640){
+      document.documentElement.style.fontSize =640/6.4 + 'px';
+    }else{
+      document.documentElement.style.fontSize = deviceWidth / 6.4 + 'px';
+    }
+  }
+
+  (function () {
+    document.addEventListener('DOMContentLoaded',function () {
+      windowChange();
+    }, false);
+
+    window.onresize = function(){
+      windowChange();
+    };
+
+  })();
+
+</script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jweixin-1.0.0.js"></script>
+<script language=JavaScript src="js/config.js"></script>
+<script src="js/visaDetails.js"></script>
+<!--<script src='js/shareLoad.js'></script>-->
+</html>

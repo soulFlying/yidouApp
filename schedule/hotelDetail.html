@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>酒店详情</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <meta name="apple-itunes-app" content="app-id=">
+  <link rel="stylesheet" href="../css/common.css"/>
+  <link rel="stylesheet" href="../css/lightSpot.css"/>
+  <style>
+    .back_hotel{
+      position: fixed;
+      display: block;
+      width: 0.5rem;
+      height: 0.5rem;
+      top: 29px;
+      left: 0.2rem;
+      float: left;
+      background: url("../images/back.png") no-repeat center;
+      background-size: 44% auto;
+      z-index: 1000;
+      cursor: pointer;
+    }
+    .mainTitle{
+      padding: 0 1rem;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+    .backBtn{
+      z-index: 9999;
+    }
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+      .mainTitle{
+        padding-top: 35px!important;
+        height: 1.7rem!important;
+      }
+      .backBtn{
+        top: 0.75rem!important;
+      }
+      .lightContent{
+        margin-top: 1.7rem!important;
+      }
+      .blueBg{
+        height: 5.2rem!important;
+      }
+      .back_hotel{
+        top: 42px!important;
+      }
+    }
+  </style>
+</head>
+<body>
+<a class="backBtn"></a>
+<div class="blueBg"></div>
+<div class="back_hotel"></div>
+<h1 class="mainTitle hotel_title"></h1>
+<div class="lightContent scheduleLight"></div>
+</body>
+<script>
+  function windowChange() {
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 640) {
+      document.documentElement.style.fontSize = 750 / 7.5 + 'px';
+    } else {
+      document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    }
+  }
+
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      windowChange();
+    }, false);
+
+    window.onresize = function () {
+      windowChange();
+    };
+
+  })();
+
+</script>
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/config.js"></script>
+<script type="text/javascript" src="../js/scheduleCons.js"></script>
+</html>

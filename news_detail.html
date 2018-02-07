@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻详情</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <meta name="apple-itunes-app" content="app-id=">
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/lightSpot.css"/>
+  <style>
+    body,html{
+      background: #fff;
+    }
+    .author{
+      font-size:0.36rem;
+      padding: 0 0.2rem;
+      font-family: HiraginoSansGB-W3;
+      color: #4A4A4A;
+      overflow: hidden;
+    }
+    .author a{
+      display: inline-block;
+      float: right;
+      font-family: HiraginoSansGB-W3;
+      font-size: 0.24rem;
+      color: #9B9B9B;
+      margin-top: 0.1rem;
+    }
+    .mainTitle{
+      color: #4A4A4A;
+      background: #fff;
+      border-bottom: 1px solid #CBCBCB;
+      overflow: hidden;
+      padding-right: 0.3rem;
+    }
+    .newsDetail{
+      margin-top: 0;
+      box-shadow: none;
+      padding: 0.3rem 0.2rem;
+      margin: 0 0 1rem;
+    }
+    .mainTitle .back{
+      background: url("images/back2.png") no-repeat center;
+      background-size: 44% auto;
+    }
+    .mainTitle .share{
+      background: url("images/shareBlack.png") no-repeat center;
+      background-size: 0.35rem auto;
+    }
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+      .mainTitle{
+        height: 1.7rem!important;
+        padding-top: 0.75rem!important;
+      }
+      .backBtn{
+        top: 0.8rem!important;
+      }
+      .newsTitle{
+        margin-top: 1.7rem!important;
+      }
+      .bottom{
+        bottom: 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+<a class="backBtn"></a>
+<h1 class="mainTitle" id='hideHeader'><span class="back"></span>新闻详情<!--<em class='share'></em>--></h1>
+<h2 class='newsTitle' id='paddingTop'></h2>
+<p class='author'><a class="restTime"></a></p>
+<div class="lightContent newsDetail"></div>
+<div class="bottom" id='shareDetail'><input type='text' value='下载逸豆APP' readonly></div>
+</body>
+<script>
+  function windowChange() {
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 640) {
+      document.documentElement.style.fontSize = 750 / 7.5 + 'px';
+    } else {
+      document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    }
+  }
+
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      windowChange();
+    }, false);
+
+    window.onresize = function () {
+      windowChange();
+    };
+
+  })();
+
+</script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/config.js"></script>
+<script type="text/javascript" src="./js/newsDetail.js"></script>
+<!--<script type=text/javascript src='./js/shareLoad.js'></script>-->
+</html>

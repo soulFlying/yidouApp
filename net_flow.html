@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>流量卡详情</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <meta name="apple-itunes-app" content="app-id=">
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+  <link rel="stylesheet" href="css/detail.css"/>
+  <style>
+    .advant div h2{
+      background: none;
+      border: none;
+    }
+    .advant .buyNow{
+      margin: 0;
+      border-radius: 8px;
+    }
+    .advant .footer{
+      margin: 0;
+      background: #F1F0F6;
+      padding: 0.3rem 0.2rem;
+      box-shadow: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 999;
+      cursor: pointer;
+    }
+    .advant .flowContent{
+      padding: 0.2rem 0.34rem;
+    }
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+      .banner .title{
+        top: 50px!important;
+      }
+      .backBtn{
+        top: 0.85rem!important;
+      }
+      .advant .footer{
+        bottom: 20px!important;
+      }
+      .back{
+        top: 50px!important;
+      }
+    }
+    </style>
+</head>
+<body>
+<a class="backBtn"></a>
+<span class="back"></span>
+<!--<a class="shareBtn"></a>
+<span class="share"></span>-->
+<div class="banner newExperience">
+  <div class="swiper-container">
+    <div class="swiper-wrapper slidesWrap">
+      <div class="swiper-slide slides"><img src=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <h1 class="title">流量卡详情</h1>
+</div>
+<div class="advant">
+  <div class="titleFlow">
+    <h2></h2>
+    <p class="prePrice"></p>
+  </div>
+  <div class="content flowContent"></div>
+  <div class="footer">
+    <div class="buyNow">
+      <input type="button" value="立即购买">
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  function windowChange() {
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 640) {
+      document.documentElement.style.fontSize = 750 / 7.5 + 'px';
+    } else {
+      document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    }
+  }
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      windowChange();
+    }, false);
+    window.onresize = function () {
+      windowChange();
+    };
+  })();
+</script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/netFlow.js"></script>
+<!--<script src='../js/shareLoad.js'></script>-->
+</html>

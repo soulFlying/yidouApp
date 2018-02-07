@@ -1,0 +1,478 @@
+.banner {
+  width: 100%;
+  height: 4.83rem;
+  overflow: hidden;
+  position: relative; }
+  .banner h1 {
+    width: 100%;
+    font-size: 0.36rem;
+    top: 30px;
+    left: 0;
+    text-align: center;
+    /*color: #5D5D5E;*/
+    color: #fff;
+    font-weight: normal;
+    position: absolute;
+    z-index: 999;
+    padding: 0 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .banner img, .banner .swiper-container {
+    width: 100%;
+    height: 100%;
+    display: block; }
+
+.advant {
+  width: 94.6%;
+  margin: -0.72rem auto 0.9rem;
+  z-index: 10;
+  position: relative;
+  /*scheduleDetail*/
+  /*net_flow*/ }
+  .advant img, .advant video {
+    width: 100%;
+    height: auto; }
+  .advant * {
+    word-break: break-all; }
+  .advant > div {
+    width: 100%;
+    background: #fff;
+    padding: 0.15rem 0.34rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 0.2rem; }
+    .advant > div h2 {
+      color: #4D4D4D;
+      border-bottom: 1px solid #F2F2F2;
+      padding: 0 0.34rem 0.1rem;
+      font-size: 0.36rem;
+      margin: 0 -0.34rem;
+      background: url("../images/up.png") no-repeat 94% 44%;
+      background-size: auto 32%; }
+    .advant > div p {
+      color: #383838;
+      font-size: 0.28rem;
+      padding: 0.15rem 0;
+      vertical-align: middle; }
+    .advant > div em {
+      display: inline-block; }
+  .advant .content {
+    box-shadow: none;
+    padding: 0;
+    color: #383838;
+    font-size: 0.28rem; }
+    .advant .content img {
+      width: 100%;
+      height: auto; }
+    .advant .content a {
+      pointer-events: none;
+      cursor: default;
+      color: #000; }
+  .advant .noteTitle h2 {
+    border-bottom: none;
+    padding-top: 0.06rem; }
+  .advant .travelDetail {
+    width: 100%; }
+    .advant .travelDetail ul {
+      padding: 0.1rem 0;
+      overflow: hidden; }
+    .advant .travelDetail li {
+      width: 100%;
+      font-size: 0.28rem;
+      letter-spacing: 0px;
+      float: left;
+      color: #555555;
+      height: 0.46rem;
+      line-height: 0.46rem;
+      vertical-align: text-top; }
+      .advant .travelDetail li a {
+        display: inline-block; }
+      .advant .travelDetail li em {
+        display: inline-block;
+        width: 0.33rem;
+        height: 0.4rem;
+        margin-right: 0.1rem;
+        vertical-align: middle;
+        background: url("../images/clock1.png") no-repeat center top;
+        background-size: 100% auto; }
+      .advant .travelDetail li:nth-child(2) em {
+        width: 0.32rem;
+        height: 0.35rem;
+        background: url("../images/wallet.png") no-repeat center top;
+        background-size: 100% auto; }
+      .advant .travelDetail li:nth-child(3) em {
+        width: 0.36rem;
+        height: 0.39rem;
+        background: url("../images/users.png") no-repeat center top;
+        background-size: 100% auto; }
+      .advant .travelDetail li:nth-child(4) em {
+        width: 0.3rem;
+        height: 0.35rem;
+        background: url("../images/calendar.png") no-repeat center top;
+        background-size: 100% auto; }
+  .advant .history, .advant .playWay, .advant .charge {
+    border: 2px solid #78E5C6;
+    font-size: 0.28rem; }
+  .advant .articleAuthor {
+    padding: 0.22rem 0.34rem; }
+    .advant .articleAuthor p {
+      padding: 0; }
+  .advant .country {
+    font-size: 0.28rem;
+    padding: 0.2rem 0.34rem; }
+    .advant .country li em {
+      display: inline-block;
+      width: 0.29rem;
+      height: 0.37rem;
+      margin-right: 0.2rem;
+      vertical-align: middle;
+      background: url("../images/Bitmap.png") no-repeat center;
+      background-size: 100% 100%; }
+    .advant .country li:nth-child(2) em {
+      width: 0.32rem;
+      height: 0.32rem;
+      margin-right: 0.2rem;
+      background: url("../images/day.png") no-repeat center;
+      background-size: 100% 100%; }
+    .advant .country li:nth-child(3) em {
+      width: 0.32rem;
+      height: 0.32rem;
+      margin-right: 0.2rem;
+      background: url("../images/month.png") no-repeat center;
+      background-size: 100% 100%; }
+  .advant .describe {
+    font-size: 0.28rem; }
+  .advant .planner {
+    overflow: hidden; }
+    .advant .planner div {
+      display: inline-block; }
+    .advant .planner .headImg {
+      width: 1.3rem;
+      height: 1.3rem;
+      padding: 0;
+      margin-right: 0.3rem;
+      border-radius: 0.7rem; }
+      .advant .planner .headImg img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 0.7rem; }
+    .advant .planner .info {
+      width: 63%;
+      height: 1.3rem;
+      vertical-align: top;
+      padding: 0.5rem 0 0; }
+      .advant .planner .info a {
+        letter-spacing: 0; }
+      .advant .planner .info span {
+        float: right;
+        padding: 0.04rem 0.08rem;
+        color: #46CFD4;
+        border: 1px solid #46CFD4;
+        border-radius: 5px;
+        letter-spacing: 0;
+        margin-top: -0.08rem; }
+    .advant .planner p {
+      padding-top: 0; }
+  .advant .selects {
+    padding: 0.2rem 0.34rem; }
+    .advant .selects li {
+      width: 23.6%;
+      display: inline-block; }
+      .advant .selects li a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        color: #383838; }
+      .advant .selects li em {
+        width: 0.41rem;
+        height: 0.34rem;
+        display: block;
+        margin: 0.2rem auto 0.08rem;
+        background: url("../images/scheduleLight.png") no-repeat center;
+        background-size: 100% 100%; }
+      .advant .selects li:nth-child(2) em {
+        width: 0.32rem;
+        height: 0.46rem;
+        background: url("../images/scheduleDaily.png") no-repeat center;
+        background-size: 100% auto; }
+      .advant .selects li:nth-child(3) em {
+        width: 0.44rem;
+        height: 0.44rem;
+        background: url("../images/hotel.png") no-repeat center;
+        background-size: 100% auto; }
+      .advant .selects li:nth-child(4) em {
+        height: 0.41rem;
+        background: url("../images/flight.png") no-repeat center;
+        background-size: 100% auto; }
+      .advant .selects li:nth-child(5) em {
+        width: 0.39rem;
+        height: 0.47rem;
+        background: url("../images/fee.png") no-repeat center;
+        background-size: 100% auto; }
+      .advant .selects li:nth-child(6) em {
+        width: 0.44rem;
+        height: 0.44rem;
+        background: url("../images/recommed.png") no-repeat center;
+        background-size: 100% auto; }
+  .advant .buyNow, .advant .rentNow {
+    height: 1rem;
+    box-shadow: 0 7px 17px 0 rgba(80, 227, 194, 0.33), 0 7px 17px 0 rgba(0, 0, 0, 0.09);
+    margin-top: 0.84rem;
+    padding: 0; }
+    .advant .buyNow input, .advant .rentNow input {
+      border: none;
+      width: 100%;
+      height: 100%;
+      display: block;
+      color: #fff;
+      background-image: linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+      background-image: -webkit-linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+      font-size: 0.36rem;
+      border-radius: 8px; }
+  .advant .titleFlow .prePrice {
+    color: #F6AF38;
+    font-weight: bold;
+    font-size: 0.34rem;
+    padding: 0; }
+  .advant .titleFlow .flowContent {
+    margin-bottom: 1rem; }
+
+.robotBtn {
+  position: fixed;
+  width: 1.32rem;
+  height: 1.32rem;
+  background: url("../images/robot.png") no-repeat center;
+  background-size: 100% 100%;
+  top: 5.78rem;
+  right: 0.54rem;
+  z-index: 100;
+  cursor: pointer; }
+
+.robotNote {
+  top: 4.48rem; }
+
+.robotNovelty {
+  top: 6.78rem; }
+
+.detail {
+  font-size: 0.28rem;
+  margin-bottom: 0.4rem; }
+
+.newExperience {
+  height: 4.85rem; }
+
+.ydetail {
+  overflow: hidden;
+  background: whitesmoke; }
+  .ydetail > img {
+    width: 5.6rem;
+    height: auto;
+    display: block;
+    margin: 0 auto; }
+    .ydetail > img:nth-child(1) {
+      margin-top: 2rem;
+      margin-bottom: 0.66rem; }
+  .ydetail hr {
+    border: 0;
+    background-color: #E7E7E7;
+    height: 1px; }
+  .ydetail .content {
+    text-align: center;
+    overflow: hidden; }
+  .ydetail .content2 h1 {
+    font-size: 0.36rem;
+    color: #1a1a1a;
+    margin-top: 0.44rem; }
+  .ydetail .content2 p {
+    font-size: 0.28rem;
+    color: #8c8c8c;
+    margin-top: 0.18rem;
+    letter-spacing: 0; }
+  .ydetail .content2 span {
+    color: #f0692e;
+    font-size: 0.55rem;
+    display: block;
+    margin-bottom: 0.38rem;
+    font-weight: bold;
+    letter-spacing: 0; }
+    .ydetail .content2 span a {
+      font-size: 0.4rem; }
+  .ydetail .content3 img {
+    width: 100%;
+    height: auto;
+    display: block; }
+  .ydetail .line {
+    background-image: linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+    background-image: -webkit-linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+    height: 0.15rem; }
+  .ydetail .content4 {
+    background: rgba(255, 255, 255, 0.8); }
+    .ydetail .content4 h1 {
+      width: 3.61rem;
+      height: 0.87rem;
+      background: url("../images/buy_title.png") no-repeat center;
+      background-size: 100%;
+      margin: 0.48rem auto 0.5rem;
+      color: #fff;
+      font-size: 0.35rem;
+      line-height: 0.87rem;
+      font-weight: normal;
+      text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); }
+    .ydetail .content4 p {
+      font-size: 0.28rem;
+      color: #3d3d3d;
+      padding: 0 0.3rem;
+      text-align: left; }
+    .ydetail .content4 img {
+      width: 6.12rem;
+      display: block;
+      margin: 1.12rem auto 1.78rem; }
+  .ydetail .content5 {
+    background: #f6f5f5;
+    padding: 2.66rem 0 2.66rem; }
+    .ydetail .content5 img {
+      display: block;
+      width: 100%; }
+  .ydetail .content6 img {
+    width: 100%;
+    margin: 0.56rem 0 1.32rem; }
+  .ydetail .content6 h2 {
+    font-size: 0.36rem;
+    color: #3d3d3d;
+    font-weight: normal;
+    margin-bottom: 0.05rem; }
+  .ydetail .content7 h1 {
+    margin: 0.67rem auto 0.63rem; }
+  .ydetail .content7 img {
+    width: 100%;
+    margin: 0.08rem 0 0; }
+  .ydetail .content8 h1 {
+    margin: 0.85rem auto 0.61rem; }
+  .ydetail .content8 img {
+    width: 100%;
+    margin: 0.55rem 0 0; }
+  .ydetail .content9 h1 {
+    margin: 0.76rem auto 0.65rem; }
+  .ydetail .content9 img {
+    width: 100%;
+    margin: 0.35rem 0 0; }
+  .ydetail .content10 {
+    font-size: 0.28rem;
+    color: #121212;
+    background: rgba(255, 255, 255, 0.8); }
+    .ydetail .content10 ul {
+      padding: 0 0.56rem;
+      margin: 0.8rem 0;
+      line-height: 0.56rem;
+      text-align: left;
+      font-size: 0.28rem; }
+      .ydetail .content10 ul li label {
+        width: 25%;
+        margin-right: 5%;
+        display: inline-block;
+        letter-spacing: 0; }
+      .ydetail .content10 ul li input {
+        border: none;
+        color: #121212;
+        width: 70%;
+        background: no-repeat; }
+      .ydetail .content10 ul .borderBot {
+        height: 0.28rem;
+        margin-bottom: 0.28rem;
+        margin-right: -0.56rem;
+        border-bottom: 1px solid #7b7b7b; }
+  .ydetail .content11 {
+    background: #f3f3f3;
+    padding-bottom: 2rem; }
+    .ydetail .content11 h1 {
+      width: 3.61rem;
+      height: 0.87rem;
+      margin: 0.75rem auto 0.4rem;
+      background: url("../images/buy_title2.png") no-repeat center;
+      background-size: 100%;
+      color: #3C3C3C;
+      font-size: 0.35rem;
+      line-height: 0.87rem; }
+    .ydetail .content11 p {
+      text-align: left;
+      padding: 0 0.5rem;
+      font-size: 0.28rem;
+      color: #454d58; }
+    .ydetail .content11 .aboutOrder p {
+      margin-bottom: 0.23rem; }
+      .ydetail .content11 .aboutOrder p:last-child {
+        margin-bottom: 0; }
+    .ydetail .content11 .ifBreak {
+      width: 100%;
+      height: auto;
+      display: block; }
+
+.rentDetail .content5 {
+  padding: 0; }
+
+.back, .share, .use {
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  position: fixed;
+  top: 28px;
+  z-index: 999;
+  cursor: pointer;
+  border-radius: 0.3rem; }
+
+.use {
+  right: 0.2rem;
+  background: rgba(104, 106, 112, 0.7) url("../images/userInfo.png") no-repeat center;
+  background-size: 50% auto; }
+
+.back {
+  left: 0.2rem;
+  background: rgba(104, 106, 112, 0.5) url("../images/back.png") no-repeat center;
+  background-size: 30% auto; }
+
+.share {
+  right: 0.2rem;
+  background: rgba(104, 106, 112, 0.5) url("../images/shareBg.png") no-repeat center;
+  background-size: 45% auto; }
+
+.backBtn, .shareBtn, .useBtn {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: fixed;
+  top: 0.45rem;
+  cursor: pointer;
+  z-index: 1000; }
+
+.backBtn {
+  left: 0.05rem; }
+
+.shareBtn, .useBtn {
+  right: 0.05rem; }
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: none;
+  cursor: pointer; }
+  .bottom input {
+    display: block;
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3); }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .bottom {
+    bottom: 34px; } }
+
+/*# sourceMappingURL=detail.css.map */

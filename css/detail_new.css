@@ -1,0 +1,146 @@
+body, html {
+  background: #fff; }
+
+.detail_top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; }
+  .detail_top .header {
+    font-size: 0.36rem;
+    color: #4A4A4A;
+    text-align: center;
+    padding: 0.3rem 0.3rem 0.2rem 0.2rem; }
+    .detail_top .header .back, .detail_top .header .use_info {
+      display: block;
+      float: left;
+      width: 0.6rem;
+      height: 0.6rem;
+      background: url("../images/yidou_detail/back.png") no-repeat center;
+      background-size: 40% auto;
+      margin-top: -2px;
+      cursor: pointer; }
+    .detail_top .header .use_info {
+      background: url("../images/yidou_detail/userInfo.png") no-repeat center;
+      background-size: 80% auto;
+      float: right; }
+  .detail_top .nav {
+    font-size: 0.3rem;
+    color: #4A4A4A;
+    overflow: hidden;
+    border-top: 1px solid #D6D7DA;
+    border-bottom: 1px solid #D6D7DA; }
+    .detail_top .nav li {
+      width: 33.33333%;
+      text-align: center;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      float: left;
+      border-right: 1px solid #D6D7DA;
+      cursor: pointer; }
+      .detail_top .nav li:last-child {
+        border-right: none; }
+    .detail_top .nav .active {
+      font-weight: bold; }
+
+.main {
+  padding-bottom: 1.5rem;
+  background: #fff;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transform: translateX(0); }
+  .main .main_pic {
+    width: 100%;
+    height: auto;
+    display: block; }
+  .main .player_wrap {
+    position: relative; }
+    .main .player_wrap .player {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .main .player_wrap .player p {
+        color: #fff;
+        text-align: center;
+        font-size: 0.28rem;
+        margin-top: 2.5rem; }
+      .main .player_wrap .player .open_player {
+        display: block;
+        margin: 0.2rem auto 0;
+        height: 0.86rem;
+        width: 3.07rem;
+        border: none;
+        outline: none;
+        background: url("../images/yidou_detail/button.png") no-repeat center;
+        background-size: 100% auto;
+        color: #fff;
+        padding-left: 0.25rem; }
+
+.norms, .afterSale {
+  display: none;
+  padding-top: 2.1rem;
+  transform: translateX(20%); }
+
+.norms {
+  padding-bottom: 2rem; }
+
+.buyNow {
+  width: 90%;
+  position: fixed;
+  bottom: 0.4rem;
+  left: 5%;
+  height: 1rem;
+  background-image: linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+  background-image: -webkit-linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+  box-shadow: 0 7px 17px 0 rgba(80, 227, 194, 0.33), 0 7px 17px 0 rgba(0, 0, 0, 0.09);
+  padding: 0;
+  z-index: 999;
+  border-radius: 8px;
+  overflow: hidden; }
+  .buyNow input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #fff;
+    font-size: 0.34rem;
+    border-radius: 8px;
+    background: none; }
+
+.mask {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: none; }
+  .mask .videos {
+    margin: 30% auto 0;
+    width: 7.5rem;
+    height: 4rem;
+    z-index: 1001; }
+    .mask .videos .playClose {
+      display: block;
+      width: 0.6rem;
+      height: 0.6rem;
+      margin: 0.5rem auto 0;
+      background: url("../images/yidou_detail/close.png") no-repeat center;
+      background-size: 100% auto;
+      z-index: 1002;
+      cursor: pointer; }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .buyNow {
+    bottom: 34px !important; }
+
+  .header {
+    padding-top: 0.88rem !important; }
+
+  .norms, .afterSale {
+    padding-top: 3.1rem; } }
+
+/*# sourceMappingURL=detail_new.css.map */

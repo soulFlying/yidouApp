@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>费用说明</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <meta name="apple-itunes-app" content="app-id=">
+  <link rel="stylesheet" href="../css/common.css"/>
+  <link rel="stylesheet" href="../css/lightSpot.css"/>
+  <style>
+    .lightDetail{
+      font-size: 0.28rem;
+    }
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+      .mainTitle{
+        padding-top: 35px!important;
+        height: 1.7rem!important;
+      }
+      .backBtn{
+        top: 0.75rem!important;
+      }
+      .lightDetail{
+        margin-top: 1.7rem!important;
+      }
+      .blueBg{
+        height: 5.2rem!important;
+      }
+    }
+  </style>
+</head>
+<body>
+<a class="backBtn"></a>
+<div class="blueBg flightBg"></div>
+<h1 class="mainTitle" id='hideHeader'><span class="back"></span>费用说明<!--<em class='share'></em>--></h1>
+<div class="lightDetail feeDetail" id='renderTop2'></div>
+<div class="bottom" id='shareDetail'><input type='text' value='下载逸豆APP' readonly></div>
+</body>
+<script>
+  function windowChange() {
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 640) {
+      document.documentElement.style.fontSize = 750 / 7.5 + 'px';
+    } else {
+      document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    }
+  }
+
+  (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      windowChange();
+    }, false);
+
+    window.onresize = function () {
+      windowChange();
+    };
+
+  })();
+
+</script>
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/scheduleCons.js"></script>
+<!--<script src='../js/shareLoad.js'></script>-->
+</html>

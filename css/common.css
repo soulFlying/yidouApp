@@ -1,0 +1,44 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+}
+body {
+    line-height: 1.6;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f1f0f6;
+    margin: 0 auto;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    min-width: 320px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+button, input[type='button'],label,input{
+    border-radius:0;
+    outline: none;
+    -webkit-tap-highlight-color: rgb(0, 0, 0);
+    font-family: "微软雅黑";
+    box-shadow: none;
+    -webkit-appearance: none;
+}
+ul,ol {
+    padding-left: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}

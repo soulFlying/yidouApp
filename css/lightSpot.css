@@ -1,0 +1,393 @@
+/*scheduleLight*/
+html, body {
+  width: 100%;
+  height: 100%; }
+
+html {
+  height: auto; }
+
+.blueBg {
+  width: 100%;
+  height: 4.83rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("../images/bg.png") no-repeat top;
+  background-size: 100% 100%;
+  box-shadow: 0 1px 3px #33CAD2;
+  z-index: -1; }
+
+.hotelBg {
+  height: 3.31rem;
+  position: fixed; }
+
+.flightBg {
+  height: 100%;
+  box-shadow: none; }
+
+.airlineBg {
+  box-shadow: none; }
+
+.mainTitle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.3rem;
+  font-size: 0.36rem;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1rem;
+  z-index: 999;
+  background: #31C8D3;
+  padding-right: 0.68rem;
+  /* padding-right: rem(30);*/ }
+  .mainTitle span {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 11px;
+    margin-left: 0.15rem;
+    float: left;
+    background: url("../images/back.png") no-repeat center;
+    background-size: 44% auto;
+    cursor: pointer; }
+  .mainTitle .share {
+    display: inline-block;
+    width: 0.65rem;
+    height: 0.65rem;
+    background: url("../images/shareBg.png") no-repeat center;
+    background-size: 0.35rem auto;
+    float: right;
+    margin-top: 7px;
+    cursor: pointer; }
+
+.lightContent {
+  margin: 0 0.2rem 1rem;
+  padding: 0.33rem 0.29rem;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 1.3rem;
+  font-size: 0.28rem;
+  line-height: 0.38rem; }
+  .lightContent img {
+    width: 100%;
+    height: auto; }
+  .lightContent a {
+    pointer-events: none;
+    cursor: default;
+    color: #000; }
+
+/*hotelInfo*/
+.swiper-container {
+  overflow: visible;
+  padding: 0 0.2rem;
+  margin-top: 1.3rem; }
+  .swiper-container .swiper-container, .swiper-container .w {
+    height: calc(100vh - 55px); }
+    .swiper-container .swiper-container .hotelLists, .swiper-container .w .hotelLists {
+      width: 100% !important; }
+      .swiper-container .swiper-container .hotelLists .list, .swiper-container .w .hotelLists .list {
+        width: 100%;
+        height: 3.6rem;
+        border-radius: 8px;
+        position: relative;
+        margin-bottom: 0.2rem;
+        border: none;
+        padding: 0; }
+        .swiper-container .swiper-container .hotelLists .list img, .swiper-container .swiper-container .hotelLists .list .evaluate, .swiper-container .w .hotelLists .list img, .swiper-container .w .hotelLists .list .evaluate {
+          width: 100%;
+          height: 100%;
+          display: block;
+          border-radius: 8px; }
+        .swiper-container .swiper-container .hotelLists .list .evaluate, .swiper-container .w .hotelLists .list .evaluate {
+          background: rgba(0, 0, 0, 0.3);
+          position: absolute;
+          top: 0;
+          left: 0; }
+          .swiper-container .swiper-container .hotelLists .list .evaluate h2, .swiper-container .w .hotelLists .list .evaluate h2 {
+            font-size: 0.36rem;
+            color: #fff;
+            text-align: center;
+            margin: 1.17rem 0 0.24rem; }
+          .swiper-container .swiper-container .hotelLists .list .evaluate .starts, .swiper-container .w .hotelLists .list .evaluate .starts {
+            width: 38%;
+            margin: 0 auto; }
+            .swiper-container .swiper-container .hotelLists .list .evaluate .starts span, .swiper-container .w .hotelLists .list .evaluate .starts span {
+              width: 0.36rem;
+              height: 0.35rem;
+              display: inline-block;
+              background: url("../images/start_yellow.png") no-repeat center;
+              background-size: 100% 100%;
+              margin: 0 0.08rem;
+              vertical-align: top; }
+            .swiper-container .swiper-container .hotelLists .list .evaluate .starts .start_fff, .swiper-container .w .hotelLists .list .evaluate .starts .start_fff {
+              background: url("../images/start_white.png") no-repeat center;
+              background-size: 100% 100%; }
+    .swiper-container .swiper-container .swiper-slide, .swiper-container .w .swiper-slide {
+      height: auto; }
+  .swiper-container .init-loading, .swiper-container .loadtip {
+    background: none;
+    border: none;
+    font-size: 0.28rem;
+    font-weight: normal;
+    text-align: center; }
+  .swiper-container .loadtip {
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    z-index: -1;
+    width: 100%; }
+
+/*flightInfo*/
+.lightDetail {
+  margin: 0 0.2rem;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 1.3rem;
+  padding: 0.34rem 0.3rem 0.43rem;
+  overflow: hidden; }
+  .lightDetail * {
+    font-size: 0.3rem;
+    letter-spacing: 0; }
+  .lightDetail .lines {
+    height: 0.4rem;
+    display: block;
+    margin: 0.28rem -0.3rem;
+    position: relative;
+    overflow: hidden; }
+    .lightDetail .lines * {
+      display: block;
+      position: absolute; }
+    .lightDetail .lines span {
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 50%;
+      margin-top: -1px;
+      background: #33CBD1; }
+      .lightDetail .lines span a {
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/lineBg.png");
+        background-repeat: repeat;
+        z-index: 50; }
+    .lightDetail .lines em {
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 0.2rem;
+      background: #33CBD1;
+      top: 0;
+      z-index: 100; }
+      .lightDetail .lines em:first-child {
+        left: -0.2rem; }
+      .lightDetail .lines em:last-child {
+        right: -0.2rem; }
+  .lightDetail h1, .lightDetail h3 {
+    color: #4A4A4A; }
+  .lightDetail h2 {
+    color: #5A5A5A;
+    font-weight: normal;
+    margin-bottom: 0.28rem; }
+    .lightDetail h2 a {
+      color: #F5AD34; }
+  .lightDetail .feeEx, .lightDetail .feeInclude {
+    padding-top: 0.2rem; }
+
+.feeDetail img, .flightDetail img, .reservationDetail img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+.flightDetail {
+  overflow: visible; }
+  .flightDetail li {
+    width: 40%;
+    display: inline-block;
+    text-align: center; }
+    .flightDetail li:nth-child(2) {
+      width: 14%;
+      height: 0.54rem;
+      background: url("../images/flight_icon.png") no-repeat center;
+      background-size: 100% auto;
+      vertical-align: baseline; }
+    .flightDetail li p {
+      font-size: 0.24rem;
+      color: #595959; }
+
+/*reservationNotes*/
+.reservationDetail {
+  color: #696969; }
+  .reservationDetail p {
+    padding-bottom: 0.1rem;
+    font-size: 0.28rem; }
+
+/*airlineTicket*/
+.airlineDetail {
+  color: #515151;
+  box-sizing: border-box;
+  overflow: visible; }
+  .airlineDetail * {
+    letter-spacing: 1px; }
+  .airlineDetail .lines {
+    margin: 0.13rem -0.3rem; }
+  .airlineDetail h1 {
+    font-family: HiraginoSansGB-W3;
+    line-height: 0.28rem;
+    color: #515151;
+    font-weight: normal; }
+    .airlineDetail h1 .goSign {
+      display: inline-block;
+      width: 0.38rem;
+      height: 0.38rem;
+      font-family: HiraginoSansGB-W6;
+      color: #FFFFFF;
+      line-height: 0.36rem;
+      border-radius: 5px;
+      background: #2EC9CF;
+      text-align: center;
+      vertical-align: baseline;
+      margin-right: 0.13rem;
+      font-weight: bold; }
+  .airlineDetail .timeAndLine {
+    overflow: hidden;
+    padding-top: 0.1rem; }
+    .airlineDetail .timeAndLine .times, .airlineDetail .timeAndLine .airLine {
+      float: left; }
+    .airlineDetail .timeAndLine .times {
+      width: 35%;
+      height: 100%;
+      text-align: right;
+      padding-right: 0.23rem;
+      overflow: hidden; }
+      .airlineDetail .timeAndLine .times div a {
+        display: block;
+        height: 0.65rem;
+        line-height: 0.65rem; }
+      .airlineDetail .timeAndLine .times div p {
+        color: #A2AEB6;
+        line-height: 0.3rem;
+        margin-top: -0.14rem; }
+    .airlineDetail .timeAndLine .airLine {
+      width: 65%;
+      position: relative;
+      padding-left: 0.23rem; }
+      .airlineDetail .timeAndLine .airLine span {
+        display: block;
+        width: 0.22rem;
+        height: 0.22rem;
+        background: #D8D8D8;
+        border-radius: 0.12rem;
+        position: absolute;
+        top: 0.19rem;
+        left: -0.1rem; }
+        .airlineDetail .timeAndLine .airLine span:nth-child(2) {
+          width: 1px;
+          height: 68%;
+          left: 0;
+          top: 0.23rem;
+          border-left: 1px solid #D8D8D8;
+          background: none; }
+        .airlineDetail .timeAndLine .airLine span:nth-child(3) {
+          top: auto;
+          bottom: 0.16rem; }
+      .airlineDetail .timeAndLine .airLine li {
+        line-height: 0.6rem; }
+        .airlineDetail .timeAndLine .airLine li:nth-child(2) {
+          color: #2EC9CF;
+          font-size: 0.28rem;
+          font-weight: bold;
+          line-height: 0.35rem; }
+
+.rules {
+  padding: 0.4rem 0.28rem;
+  background: #fff;
+  margin: 0.35rem 0 1.76rem;
+  font-size: 0.28rem;
+  color: #A2AEB6; }
+  .rules h2 {
+    font-size: 0.32rem; }
+
+.total {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 0.32rem;
+  font-weight: bold;
+  color: #4A4A4A;
+  background: #fff;
+  padding: 0.28rem;
+  overflow: hidden; }
+  .total div {
+    float: left; }
+    .total div:nth-child(1) {
+      padding-top: 0.05rem; }
+    .total div span {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 0.2rem; }
+      .total div span a {
+        display: block; }
+      .total div span .price {
+        color: #F5A623; }
+      .total div span .tax {
+        color: #A2AEB6;
+        font-size: 0.3rem;
+        font-weight: normal;
+        line-height: 0.3rem;
+        letter-spacing: 0; }
+  .total .buyFrame {
+    float: right;
+    width: 3.46rem;
+    height: 1rem;
+    cursor: pointer;
+    color: #fff;
+    background-image: linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+    background-image: -webkit-linear-gradient(10deg, #31C7D4 0%, #44E9C3 100%);
+    box-shadow: 0 7px 17px 0 rgba(80, 227, 194, 0.33), 0 7px 17px 0 rgba(0, 0, 0, 0.09);
+    border-radius: 8px;
+    text-align: center;
+    line-height: 1rem;
+    z-index: 999; }
+
+.newsTitle {
+  font-size: 0.48rem;
+  line-height: 0.6rem;
+  margin-top: 1.3rem;
+  padding: 0.25rem 0.2rem 0.2rem; }
+
+.backBtn {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: fixed;
+  top: 0.35rem;
+  left: 0.05rem;
+  cursor: pointer;
+  z-index: 1000; }
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: none;
+  cursor: pointer; }
+  .bottom input {
+    display: block;
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3); }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .bottom {
+    bottom: 34px; } }
+
+/*# sourceMappingURL=lightSpot.css.map */
