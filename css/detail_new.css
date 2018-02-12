@@ -25,13 +25,17 @@ body, html {
       background: url("../images/yidou_detail/userInfo.png") no-repeat center;
       background-size: 80% auto;
       float: right; }
-  .detail_top .nav {
+
+.nav_title {
+  width: 100%;
+  z-index: 999; }
+  .nav_title .nav {
     font-size: 0.3rem;
     color: #4A4A4A;
     overflow: hidden;
     border-top: 1px solid #D6D7DA;
     border-bottom: 1px solid #D6D7DA; }
-    .detail_top .nav li {
+    .nav_title .nav li {
       width: 33.33333%;
       text-align: center;
       height: 0.8rem;
@@ -39,9 +43,9 @@ body, html {
       float: left;
       border-right: 1px solid #D6D7DA;
       cursor: pointer; }
-      .detail_top .nav li:last-child {
+      .nav_title .nav li:last-child {
         border-right: none; }
-    .detail_top .nav .active {
+    .nav_title .nav .active {
       font-weight: bold; }
 
 .main {
@@ -49,13 +53,16 @@ body, html {
   background: #fff;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
-  transform: translateX(0); }
+  transform: translateX(0);
+  overflow: hidden; }
   .main .main_pic {
     width: 100%;
     height: auto;
     display: block; }
   .main .player_wrap {
-    position: relative; }
+    position: relative;
+    overflow: hidden;
+    width: 100%; }
     .main .player_wrap .player {
       width: 100%;
       position: absolute;
@@ -80,7 +87,7 @@ body, html {
 
 .norms, .afterSale {
   display: none;
-  padding-top: 2.1rem;
+  padding-top: 0.2rem;
   transform: translateX(20%); }
 
 .norms {
@@ -138,9 +145,6 @@ body, html {
     bottom: 34px !important; }
 
   .header {
-    padding-top: 0.88rem !important; }
-
-  .norms, .afterSale {
-    padding-top: 3.1rem; } }
+    padding-top: 0.88rem !important; } }
 
 /*# sourceMappingURL=detail_new.css.map */

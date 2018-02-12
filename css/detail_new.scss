@@ -32,6 +32,10 @@ body,html{
       float: right;
     }
   }
+}
+.nav_title{
+  width: 100%;
+  z-index: 999;
   .nav{
     font-size: rem(30);
     color: #4A4A4A;
@@ -61,6 +65,7 @@ body,html{
   transition: all 0.3s ease-out;
   -webkit-transition:all 0.3s ease-out;
   transform: translateX(0);
+  overflow: hidden;
   .main_pic{
     width: 100%;
     height: auto;
@@ -68,6 +73,8 @@ body,html{
   }
   .player_wrap{
     position: relative;
+    overflow: hidden;
+    width: 100%;
     .player{
       width: 100%;
       position: absolute;
@@ -96,7 +103,7 @@ body,html{
 }
 .norms,.afterSale{
   display: none;
-  padding-top: rem(210);
+  padding-top: rem(20);
   transform: translateX(20%);
 }
 .norms{
@@ -158,9 +165,6 @@ body,html{
     bottom: 34px!important;
   }
   .header{
-    padding-top: rem(88)!important;
-  }
-  .norms,.afterSale{
-    padding-top: rem(310);
+    padding-top: rem(75)!important;
   }
 }
